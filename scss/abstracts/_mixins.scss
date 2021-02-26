@@ -5,3 +5,14 @@
     display: table;
   }
 }
+
+@mixin gradient-text {
+  background-image: linear-gradient(
+    to right top,
+    $color-secondary-light,
+    $color-secondary-dark,
+    $color-secondary
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}

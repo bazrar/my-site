@@ -9,25 +9,25 @@ body {
 }
 
 .heading-primary {
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   margin-bottom: 6rem;
 
   .heading-primary-main {
     display: block;
     font-family: "Lato", sans-serif;
+    color: ghostwhite;
     font-size: 7rem;
     letter-spacing: 1.5rem;
     font-weight: 700;
-    animation: moveInLeft 0.5s ease-out;
+    animation: moveInLeft 1.2s ease-in;
   }
   .heading-primary-sub {
+    @include gradient-text;
     display: block;
-    font-size: 2.1rem;
-    letter-spacing: 1.2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.6rem;
     font-weight: 700;
+    transform: translateX(10rem);
   }
 }
 
@@ -62,6 +62,28 @@ body {
   font-size: 1.6rem;
   &:not(last-child) {
     margin-bottom: 3rem;
+  }
+}
+
+.text {
+  position: relative;
+  width: 35ch;
+  overflow: hidden;
+  color: #60b99a;
+  font-family: "Inconsolata", monospace;
+  font-size: 2.4rem;
+  white-space: nowrap;
+  animation: reveal 1.5s steps(55, end);
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #60b99a;
+    animation: blink 1.6s infinite;
   }
 }
 
