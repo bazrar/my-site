@@ -108,8 +108,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: -webkit-gradient(linear, left top, right top, from(#833ab4), to(#fd1d1d));
+  background-image: linear-gradient(to right, #833ab4, #fd1d1d);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -147,6 +147,10 @@ body {
 
 .mb-8 {
   margin-bottom: 0.8rem;
+}
+
+.mb-80 {
+  margin-bottom: 8rem;
 }
 
 .header {
@@ -273,17 +277,21 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #55c75a;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  color: rgba(207, 207, 207, 0.944);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#fd1d1d), to(#833ab4));
+  background-image: linear-gradient(to right top, #fd1d1d, #833ab4);
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c75a;
-  padding: 3px;
+  border-radius: 3rem;
+  border-bottom: 1px solid #833ab4;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .btn-text:hover {
-  background-color: #55c75a;
+  background-color: #c779d0;
   color: #fff;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -296,6 +304,49 @@ body {
           transform: translateY(0);
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+  outline-offset: 0.1rem;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 60%;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 8rem;
+}
+
+.composition__photo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  outline: 1.5rem solid rgba(199, 121, 208, 0.3);
+}
+
+.composition:hover .composition __photo:not(:hover) {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
 }
 
 .section-about {
