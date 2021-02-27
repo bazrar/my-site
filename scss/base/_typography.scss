@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300;400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=DotGothic16&family=Judson:wght@400;700&family=Reggae+One&display=swap");
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
@@ -13,21 +13,37 @@ body {
   margin-bottom: 6rem;
 
   .heading-primary-main {
+    font-style: italic;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+
     display: block;
-    font-family: "Lato", sans-serif;
-    color: ghostwhite;
+    font-family: "Archivo Black", sans-serif;
+    text-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    // color: ghostwhite;
     font-size: 7rem;
-    letter-spacing: 1.5rem;
-    font-weight: 700;
+    letter-spacing: 1.2rem;
+    font-weight: 400;
     animation: moveInLeft 1.2s ease-in;
   }
   .heading-primary-sub {
-    @include gradient-text;
     display: block;
     font-size: 2.5rem;
-    letter-spacing: 0.6rem;
-    font-weight: 700;
-    transform: translateX(10rem);
+    letter-spacing: 0.8rem;
+    font-weight: 400;
+
+    .typewrite {
+      font-family: "lato", sans-serif;
+      font-style: italic;
+      @include gradient-text;
+      text-decoration: none;
+    }
   }
 }
 
@@ -67,7 +83,7 @@ body {
 
 .text {
   position: relative;
-  width: 35ch;
+  width: 55ch;
   overflow: hidden;
   color: #60b99a;
   font-family: "Inconsolata", monospace;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=DotGothic16&family=Judson:wght@400;700&family=Reggae+One&display=swap");
 @-webkit-keyframes moveInLeft {
   0% {
     opactiy: 0;
@@ -120,27 +121,36 @@ body {
 }
 
 .heading-primary .heading-primary-main {
+  font-style: italic;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#833ab4), to(#fd1d1d));
+  background-image: linear-gradient(to right bottom, #833ab4, #fd1d1d);
+  -webkit-background-clip: text;
+  color: transparent;
   display: block;
-  font-family: "Lato", sans-serif;
-  color: ghostwhite;
+  font-family: "Archivo Black", sans-serif;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   font-size: 7rem;
-  letter-spacing: 1.5rem;
-  font-weight: 700;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
   -webkit-animation: moveInLeft 1.2s ease-in;
           animation: moveInLeft 1.2s ease-in;
 }
 
 .heading-primary .heading-primary-sub {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#833ab4), color-stop(#fd1d1d), to(#c779d0));
-  background-image: linear-gradient(to right top, #833ab4, #fd1d1d, #c779d0);
-  -webkit-background-clip: text;
-  color: transparent;
   display: block;
   font-size: 2.5rem;
-  letter-spacing: 0.6rem;
-  font-weight: 700;
-  -webkit-transform: translateX(10rem);
-          transform: translateX(10rem);
+  letter-spacing: 0.8rem;
+  font-weight: 400;
+}
+
+.heading-primary .heading-primary-sub .typewrite {
+  font-family: "lato", sans-serif;
+  font-style: italic;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#5643fa), color-stop(#fd1d1d), to(#2998ff));
+  background-image: linear-gradient(to top right, #5643fa, #fd1d1d, #2998ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
 }
 
 .heading-secondary {
@@ -179,7 +189,7 @@ body {
 
 .text {
   position: relative;
-  width: 35ch;
+  width: 55ch;
   overflow: hidden;
   color: #60b99a;
   font-family: "Inconsolata", monospace;

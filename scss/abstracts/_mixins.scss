@@ -8,10 +8,10 @@
 
 @mixin gradient-text {
   background-image: linear-gradient(
-    to right top,
-    $color-secondary-light,
+    to top right,
+    $color-choice-4,
     $color-secondary-dark,
-    $color-secondary
+    $color-choice-3
   );
   -webkit-background-clip: text;
   color: transparent;
