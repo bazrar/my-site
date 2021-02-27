@@ -11,16 +11,17 @@ body {
 .heading-primary {
   text-transform: uppercase;
   margin-bottom: 6rem;
+  color: rgba($color-white, 0.8);
 
   .heading-primary-main {
     font-style: italic;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-secondary-light,
-      $color-secondary-dark
-    );
-    -webkit-background-clip: text;
-    color: transparent;
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   $color-secondary-light,
+    //   $color-secondary-dark
+    // );
+    // -webkit-background-clip: text;
+    // color: transparent;
 
     display: block;
     font-family: "Archivo Black", sans-serif;
@@ -39,9 +40,10 @@ body {
     font-weight: 400;
 
     .typewrite {
+      color: rgba($color-primary-light, 0.96);
       font-family: "lato", sans-serif;
       font-style: italic;
-      @include gradient-text;
+      // @include gradient-text;
       text-decoration: none;
     }
   }

@@ -118,14 +118,11 @@ body {
 .heading-primary {
   text-transform: uppercase;
   margin-bottom: 6rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .heading-primary .heading-primary-main {
   font-style: italic;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#833ab4), to(#fd1d1d));
-  background-image: linear-gradient(to right bottom, #833ab4, #fd1d1d);
-  -webkit-background-clip: text;
-  color: transparent;
   display: block;
   font-family: "Archivo Black", sans-serif;
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -144,12 +141,9 @@ body {
 }
 
 .heading-primary .heading-primary-sub .typewrite {
+  color: rgba(126, 213, 111, 0.96);
   font-family: "lato", sans-serif;
   font-style: italic;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#5643fa), color-stop(#fd1d1d), to(#2998ff));
-  background-image: linear-gradient(to top right, #5643fa, #fd1d1d, #2998ff);
-  -webkit-background-clip: text;
-  color: transparent;
   text-decoration: none;
 }
 
@@ -290,6 +284,59 @@ body {
 
 .row .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
+}
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.8rem;
+  -webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -25rem;
+}
+
+.footer__logo-box {
+  text-align: center;
+  margin: 8rem 0;
+}
+
+.footer__logo {
+  width: 15rem;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: #55c75a;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-5deg) scale(1.1);
+          transform: rotate(-5deg) scale(1.1);
+}
+
+.footer__copyright {
+  text-transform: capitalize;
+  font-size: 1.2rem;
 }
 
 .btn:link,
